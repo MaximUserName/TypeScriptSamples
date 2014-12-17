@@ -5,7 +5,7 @@ declare module "mongodb" {
         constructor(host: string, port: number, opts?: any, moreopts?: any);
     }
     export class Db {
-        constructor(databaseName: string, serverConfig: Server);
+        constructor(databaseName: string, serverConfig: Server, options?: any);
         public open(callback: ()=>void);
         public collection(name: string, callback: (err: any, collection: MongoCollection) => void);    
     }

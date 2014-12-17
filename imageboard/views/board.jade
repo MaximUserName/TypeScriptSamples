@@ -20,7 +20,7 @@ block mainContent
               div.comment
                 a(href= "/user/"+comment.user)
                   b= comment.user
-                &nbsp; #{comment.text}
+                #comment.text
   .grid_12
     br
     a(href= "/user/"+username+"/"+board.title+"/newpin") Add a new pin...
